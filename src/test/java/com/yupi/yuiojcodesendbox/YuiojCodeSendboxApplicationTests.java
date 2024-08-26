@@ -14,14 +14,18 @@ class YuiojCodeSendboxApplicationTests {
 
     @Test
     void contextLoads() {
-        String userDir = System.getProperty("user.dir");
-        String filePath = userDir + File.separator + "src/main/resources/application.yml";
-        try {
-            List<String> allLines = Files.readAllLines(Paths.get(filePath));
-            System.out.println(String.join("\n",allLines));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//        String userDir = System.getProperty("user.dir");
+//        String filePath = userDir + File.separator + "src/main/resources/application.yml";
+//        try {
+//            List<String> allLines = Files.readAllLines(Paths.get(filePath));
+//            System.out.println(String.join("\n",allLines));
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+        String stringArgs = "1  3";
+        String[] strings = stringArgs.split(" ");
+        System.out.println(strings);
+
     }
 
 }
